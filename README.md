@@ -140,10 +140,16 @@ Visualizations provide a clear, graphical representation of complex data, making
 ## Project Structure
 
 ```
-├── data/              # Directory for input data files (e.g., VCF)
-├── scripts/           # Annotation and analysis scripts
-├── results/           # Output directory for results and visualizations
-└── README.md          # This file
+├── data/                         # Input data files (e.g., VCF)
+├── scripts/
+│   ├── 1_read_variant_data.R      # Script for reading VCF data
+│   ├── 2_annotate_variants.R      # Script for annotating variants
+│   ├── 3_predict_functional_impact.R  # Script for predicting functional impact
+│   ├── 4_pathway_enrichment.R     # Script for pathway enrichment analysis
+│   ├── 5_visualization.R          # Script for generating visualizations
+│   └── main.R                     # Master script that sources all individual scripts
+├── results/                       # Directory for output results and visualizations
+└── README.md                      # Project README
 ```
 
 ---
