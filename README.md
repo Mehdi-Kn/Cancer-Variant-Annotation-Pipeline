@@ -140,16 +140,14 @@ Visualizations provide a clear, graphical representation of complex data, making
 ## Project Structure
 
 ```
-├── data/                         # Input data files (e.g., VCF)
-├── scripts/
-│   ├── 1_read_variant_data.R      # Script for reading VCF data
-│   ├── 2_annotate_variants.R      # Script for annotating variants
-│   ├── 3_predict_functional_impact.R  # Script for predicting functional impact
-│   ├── 4_pathway_enrichment.R     # Script for pathway enrichment analysis
-│   ├── 5_visualization.R          # Script for generating visualizations
-│   └── main.R                     # Master script that sources all individual scripts
-├── results/                       # Directory for output results and visualizations
-└── README.md                      # Project README
+├── 1_read_variant_data.R            # Step 1: Read variant data from VCF file
+├── 2_annotate_variants.R            # Step 2: Annotate variants using Ensembl VEP
+├── 3_predict_functional_impact.R    # Step 3: Predict functional impact of variants
+├── 4_pathway_enrichment.R           # Step 4: Perform pathway enrichment analysis
+├── 5_visualization.R                # Step 5: Visualize the results
+├── LICENSE                          # License file
+├── README.md                        # Project documentation (this file)
+└── full_code.R                      # Single script for running the entire pipeline
 ```
 
 ---
